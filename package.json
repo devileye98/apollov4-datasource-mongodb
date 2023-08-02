@@ -1,6 +1,6 @@
 {
   "name": "apollov4-datasource-mongodb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Apollo data source for MongoDB",
   "main": "dist/index.js",
   "types": "index.d.ts",
