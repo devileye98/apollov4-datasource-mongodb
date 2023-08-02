@@ -1,13 +1,13 @@
-[![npm version](https://badge.fury.io/js/apollo-datasource-mongodb.svg)](https://www.npmjs.com/package/apollo-datasource-mongodb)
+# Fork from [apollo-datasource-mongodb][1]
 
-Apollo [data source](https://www.apollographql.com/docs/apollo-server/data/fetching-data) for MongoDB
+This package is based on the PR created by @nnoce14 in GitHub
 
-Note: This README applies to the current version 0.6.0 and is meant to be paired with Apollo Server 4.  
-See the old [README](README.old.md) for versions 0.5.4 and below, if you are using Apollo Server 3.
+Apollo [data source](https://www.apollographql.com/docs/apollo-server/data/fetching-data) for MongoDB 
+
 
 **Installation**
 ```
-npm i apollo-datasource-mongodb
+npm i apollov4-datasource-mongodb
 ```
 
 This package uses [DataLoader](https://github.com/graphql/dataloader) for batching and per-request memoization caching. It also optionally (if you provide a `ttl`) does shared application-level caching (using either the default Apollo `InMemoryLRUCache` or the [cache you provide to ApolloServer()](https://www.apollographql.com/docs/apollo-server/performance/cache-backends#configuring-external-caching)). It does this for the following methods:
@@ -44,7 +44,7 @@ The basic setup is subclassing `MongoDataSource`, passing your collection or Mon
 `data-sources/Users.js`
 
 ```js
-import { MongoDataSource } from 'apollo-datasource-mongodb'
+import { MongoDataSource } from 'apollov4-datasource-mongodb'
 
 export default class Users extends MongoDataSource {
   getUser(userId) {
@@ -250,7 +250,7 @@ Since we are using a typed language, we want the provided methods to be correctl
 `data-sources/Users.ts`
 
 ```ts
-import { MongoDataSource } from 'apollo-datasource-mongodb'
+import { MongoDataSource } from 'apollov4-datasource-mongodb'
 import { ObjectId } from 'mongodb'
 
 interface UserDocument {
@@ -315,7 +315,7 @@ to your data source class and modifying to options argument of the constructor t
 assign the context to the member field on your data source class. Note: context needs to be a class in order to do this.
 
 ```ts
-import { MongoDataSource } from 'apollo-datasource-mongodb'
+import { MongoDataSource } from 'apollov4-datasource-mongodb'
 import { ObjectId } from 'mongodb'
 
 interface UserDocument {
