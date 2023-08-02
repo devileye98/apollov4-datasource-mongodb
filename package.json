@@ -1,6 +1,6 @@
 {
-  "name": "apollo-datasource-mongodb",
-  "version": "0.6.0",
+  "name": "apollov4-datasource-mongodb",
+  "version": "0.1.0",
   "description": "Apollo data source for MongoDB",
   "main": "dist/index.js",
   "types": "index.d.ts",
@@ -34,14 +34,14 @@
     "release": "^6.3.0",
     "waait": "^1.0.5"
   },
-  "homepage": "https://github.com/GraphQLGuide/apollo-datasource-mongodb",
+  "homepage": "https://github.com/devileye98/apollov4-datasource-mongodb",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GraphQLGuide/apollo-datasource-mongodb"
+    "url": "git+https://github.com/devileye98/apollov4-datasource-mongodb"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GraphQLGuide/apollo-datasource-mongodb/issues"
+    "url": "https://github.com/devileye98/apollov4-datasource-mongodb/issues"
   },
   "author": "Loren Sands-Ramshaw <loren@graphql.guide> (https://graphql.guide)",
   "keywords": [
